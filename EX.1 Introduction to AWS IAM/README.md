@@ -39,7 +39,7 @@ The objective of this lab is to understand how AWS Identity and Access Managemen
 - Added user-3 to the EC2-Admin group  
   **Screenshot:**
 
-  
+  <img width="1272" height="661" alt="image" src="https://github.com/user-attachments/assets/06875a4c-1fce-47e1-aa45-24b833a40b5f" />
 
 ### Task 3: Test IAM User Permissions
 
