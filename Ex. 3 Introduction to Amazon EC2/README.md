@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Elavarasan M
+* **Register Number**: 212224040083
+* **Date of Submission**: 27-02-2026
 
 ---
 
@@ -98,33 +98,29 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 (Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. .A Virtual Private Cloud (VPC) was created with the CIDR block 10.0.0.0/16 to provide a secure and isolated network environment in AWS.
+2. .A public subnet was then created within the VPC using the CIDR block 10.0.1.0/24, and the auto-assign public IPv4 option was enabled to allow internet access for the instances launched inside it.
+3. An Internet Gateway was created and attached to the VPC to enable internet connectivity. A route table was configured with a default route (0.0.0.0/0) pointing to the Internet Gateway, and this route table was associated with the public subnet.
+4. A security group was created to allow inbound SSH (port 22) and HTTP (port 80) traffic. After configuring the security group, an EC2 instance was launched using the Amazon Linux 2 AMI. The instance was associated with the created security group and a key pair for secure access.
+5. The EC2 instance was connected using SSH. The Apache HTTPD web server was installed and started on the instance
 
----
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
-
----
+![alt text](<images/Screenshot (86).png>)
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
-
----
+![alt text](images/i-02162a40745723e3a.jpg)
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
+![alt text](<images/Screenshot (89).png>)
 
----
+![alt text](<images/Screenshot (90).png>)
+
 
 ## Result 
 
