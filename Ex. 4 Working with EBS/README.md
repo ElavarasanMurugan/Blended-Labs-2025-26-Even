@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Elavarasan M
+* **Register Number**: 212224040083
+* **Date of Submission**: 28-02-2026
 
 ---
 
@@ -78,13 +78,21 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1. First, I logged in to the AWS Management Console and opened the Amazon EC2 dashboard. Then I navigated to the Elastic Block Store section to view the available volume types.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2. I created a new EBS volume by selecting the required volume type (gp3) and specifying the storage size. I ensured that the volume was created in the same Availability Zone as my existing EC2 instance.
+
+3. After the volume was created, I selected the volume and attached it to my running EC2 instance as an additional device (for example, /dev/xvdf).
+
+4. I connected to the EC2 instance using SSH. Then I checked the attached device using the lsblk command and formatted the new volume using the ext4 file system.
+
+5. I created a directory (for example, /mnt/ebs) and mounted the formatted volume to that directory using the mount command.
+
+6. Inside the mounted directory, I created sample files and folders to store data and verified that the files were saved successfully.
+
+7. Finally, I rebooted the EC2 instance and checked the mounted volume again to confirm that the stored data was still available, proving that EBS provides persistent storage.
+
+
 
 ---
 
@@ -92,21 +100,15 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
-
----
+![alt text](images/image-1.png)
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
-
----
+![alt text](images/image-2.png)
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
-
----
+![alt text](images/image-3.png)
 
 ## Result / Conclusion
 
